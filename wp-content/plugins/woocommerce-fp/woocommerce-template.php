@@ -136,9 +136,12 @@ if ( ! function_exists( 'woocommerce_product_sub_subcategories' ) ) {
         if ( $my_child_product_category ) {
             echo $before;
 
+            crate_alphabetic_menu(array("child_product_category"=>$my_child_product_category));
+
             foreach ( $my_child_product_category as $category ) {
+                $this_letter = substr($category->slug, 0, 1);
                 wc_get_template( 'content-product_cat.php', array(
-                    'category' => $category
+                    'category' => $category, 'this_letter' => $this_letter
                 ) );
             }
 
@@ -169,5 +172,46 @@ if ( ! function_exists( 'woocommerce_product_sub_subcategories' ) ) {
         }
 
         return true;
+    }
+}
+
+
+if ( ! function_exists( 'crate_alphabetic_menu' ) ) {
+
+    function crate_alphabetic_menu( $args = array() ) {
+
+        $defaults = array(
+            'before'        => '',
+            'after'         => '',
+            'force_display' => false
+        );
+        $args = wp_parse_args( $args, $defaults );
+
+        extract( $args );
+        //echo "<br>===========================<br>";
+        //print_r($child_product_category);
+        //echo "<br>===========================<br>";
+        //$output = $before . $text . $after;
+
+        //echo $output;
+
+        foreach($child_product_category as $single_child_product_category){
+            $this_letter = substr($single_child_product_category->slug, 0, 1);
+            if(!in_array($this_letter,$letters))
+                $letters[]=$this_letter;
+
+
+        }
+        //print_r($letters);
+        echo "Naviga per nome alfabetico: ";
+        $i=1;
+        foreach($letters as $letter){
+            echo "<a href=\"#letter".$letter."\">".strtoupper($letter)."</a>";
+            if($i<count($letters)){echo ", ";}
+            //echo $i." ".count($letters)." / ";
+            $i++;
+        }
+        echo "<br>";
+
     }
 }
