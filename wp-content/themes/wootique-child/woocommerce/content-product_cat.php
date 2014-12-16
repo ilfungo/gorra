@@ -16,6 +16,8 @@ global $woocommerce_loop;
 // Store loop count we're currently on
 if ( empty( $woocommerce_loop['loop'] ) )
 	$woocommerce_loop['loop'] = 0;
+if ( empty( $woocommerce_loop['this_letter_temp'] ) )
+    $woocommerce_loop['this_letter_temp'] = "";
 
 // Store column count for displaying the grid
 if ( empty( $woocommerce_loop['columns'] ) )
@@ -32,8 +34,17 @@ $woocommerce_loop['loop']++;
 	?>">
 
 	<?php do_action( 'woocommerce_before_subcategory', $category ); ?>
-
+    <?php
+    if($woocommerce_loop['this_letter_temp'] == $this_letter){ //echo "è uguale";?>
 	<a href="<?php echo get_term_link( $category->slug, 'product_cat' ); ?>">
+    <?php }else{   //echo "è diversa"; echo $woocommerce_loop['this_letter_temp']."<br>";?>
+    <a href="<?php echo get_term_link( $category->slug, 'product_cat' ); ?>" name="<?php echo "letter".$this_letter?>">
+    <?php }
+    //non è mai valorizzata correttamente
+    //echo "this_letter_temp -> ".$woocommerce_loop['this_letter_temp'];
+    $woocommerce_loop['this_letter_temp'] = $this_letter;
+
+    ?>
 
 		<?php
 			/**

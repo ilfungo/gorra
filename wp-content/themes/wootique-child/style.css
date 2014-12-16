@@ -43,15 +43,6 @@ Version:        0.1.0
     position: relative;
     right: -3px;
 }
-body.term-aster {
-    background-color: #877697;
-}
-body.term-aster div#wrapper, body.term-aster div#header, body.term-aster div#bottom_debug {
-    background-color: #877697;
-}
-body.term-aster #navigation-one li a {
-    background-image: linear-gradient(to top, #5c5167 0%, #a48fb8 100%);
-}
 body.aster {
     background-color: #877697;
 }
@@ -61,59 +52,19 @@ body.aster div#wrapper, body.aster div#bottom_debug {
 body.aster #navigation-one li a {
     background-image: linear-gradient(to top, #5c5167 0%, #a48fb8 100%);
 }
-body.term-perenni {
-    background-color: #797f98;
-}
-body.term-perenni div#wrapper, body.term-perenni div#header, body.term-perenni div#bottom_debug {
-    background-color: #797f98;
-}
-body.term-perenni #navigation-one li a {
-    background-image: linear-gradient(to top, #535668 0%, #929bb8 100%);
-}
 body.perenni {
     background-color: #797f98;
 }
 body.perenni div#wrapper, body.perenni div#bottom_debug {
     background-color: #797f98;
 }
-body.compositae {
-    background-color: #797f98;
-}
-body.compositae div#wrapper, body.compositae div#bottom_debug {
-    background-color: #797f98;
-}
-body.ranuncolaceae {
-    background-color: #797f98;
-}
-body.ranuncolaceae div#wrapper, body.ranuncolaceae div#bottom_debug {
-    background-color: #797f98;
-}
-body.scrophulariaceae {
-    background-color: #797f98;
-}
-body.scrophulariaceae div#wrapper, body.scrophulariaceae div#bottom_debug {
-    background-color: #797f98;
-}
 body.perenni #navigation-one li a {
-    background-image: linear-gradient(to top, #535668 0%, #929bb8 100%);
-}
-body.compositae #navigation-one li a {
-    background-image: linear-gradient(to top, #535668 0%, #929bb8 100%);
-}
-body.ranuncolaceae #navigation-one li a {
-    background-image: linear-gradient(to top, #535668 0%, #929bb8 100%);
-}
-body.scrophulariaceae #navigation-one li a {
-    background-image: linear-gradient(to top, #535668 0%, #929bb8 100%);
-}
-body.term-graminacee {
-    background-color: #e0cfac;
-}
-body.term-graminacee div#wrapper, body.term-graminacee div#header, body.term-graminacee div#bottom_debug {
-    background-color: #e0cfac;
-}
-body.term-graminacee #navigation-one li a {
-    background-image: linear-gradient(to top, #988c75 0%, #e6e3d2 100%);
+	background-image: -ms-linear-gradient(bottom, #535769 0%, #888FAB 100%);
+	background-image: -moz-linear-gradient(bottom, #535769 0%, #888FAB 100%);
+	background-image: -o-linear-gradient(bottom, #535769 0%, #888FAB 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #535769), color-stop(1, #888FAB));
+	background-image: -webkit-linear-gradient(bottom, #535769 0%, #888FAB 100%);
+	background-image: linear-gradient(to top, #535769 0%, #888FAB 100%);
 }
 body.graminacee {
     background-color: #e0cfac;
@@ -124,26 +75,20 @@ body.graminacee div#wrapper, body.graminacee div#bottom_debug {
 body.graminacee #navigation-one li a {
     background-image: linear-gradient(to top, #988c75 0%, #e6e3d2 100%);
 }
-body.term-sedum-crassulaceae {
-    background-color: #c496a7;
-}
-body.term-sedum-crassulaceae div#wrapper, body.term-sedum-crassulaceae div#header, body.term-sedum-crassulaceae div#bottom_debug {
-    background-color: #c496a7;
-}
 
 body.sedum-crassulaceae {
-    background-color: #e0cfac;
+    background-color: #c496a7;
 }
 body.sedum-crassulaceae div#wrapper, body.sedum-crassulaceae div#bottom_debug {
-    background-color: #e0cfac;
+    background-color: #c496a7;
 }
 body.sedum-crassulaceae #navigation-one li a {
-	background-image: -ms-linear-gradient(bottom, #988C75 0%, #E6E3D2 100%);
-	background-image: -moz-linear-gradient(bottom, #988C75 0%, #E6E3D2 100%);
-	background-image: -o-linear-gradient(bottom, #988C75 0%, #E6E3D2 100%);
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #988C75), color-stop(1, #E6E3D2));
-	background-image: -webkit-linear-gradient(bottom, #988C75 0%, #E6E3D2 100%);
-	background-image: linear-gradient(to top, #988C75 0%, #E6E3D2 100%);
+	background-image: -ms-linear-gradient(bottom, #896874 0%, #C496A7 100%);
+	background-image: -moz-linear-gradient(bottom, #896874 0%, #C496A7 100%);
+	background-image: -o-linear-gradient(bottom, #896874 0%, #C496A7 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #896874), color-stop(1, #C496A7));
+	background-image: -webkit-linear-gradient(bottom, #896874 0%, #C496A7 100%);
+	background-image: linear-gradient(to top, #896874 0%, #C496A7 100%); 
 }
 body.home #navigation-one li a {
     background-image: linear-gradient(to top, #50685f 0%, #8db8a9 100%);
@@ -202,8 +147,8 @@ a.button.product_type_simple {
 }
 .single-product .product .summary h1.product_title {
     font-size: 1.3em;
-    padding: 0;
-    line-height:2.5em;
+    padding: 1em 0;
+    line-height:1.5em;
 }
 .famiglia b, .genere b{
     font-size: 1.1em;
@@ -212,7 +157,13 @@ div.famiglia, div.genere{
     display:inline-block;
 }
 div.famiglia{
- margin-left:1em ;
+ /*margin-left:1em ;*/
+ clear:both;
+ border-top:1px solid #e6e6e6;
+ border-bottom:1px solid #e6e6e6;
+ padding: 0 0.5em;
+ width:100%;
+ text-align:right;
 }
 .mylabel {
     font-size: 1em;
@@ -243,4 +194,19 @@ p.price{
     padding: 0;
     font-size:0.8em;
 }
+.descrittore_generico{
+    display: inline-block;
+}
+.descrittore_generico_figlio{
+    display: inline-block;
+}
 
+.single-product .product .summary form.cart {
+    background: url("none") repeat-x scroll center top rgba(0, 0, 0, 0);
+    border-top: 1px solid #e6e6e6;
+    margin-bottom: 0.618em;
+    margin-top: 1em;
+    padding-top: 0.7em;
+    overflow: hidden;
+    padding-top: 1.5em;
+}

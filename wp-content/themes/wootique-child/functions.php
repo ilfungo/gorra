@@ -229,5 +229,56 @@ function wordimpress_custom_checkout_field( $checkout ) {
 
 
 /*---Move Product price by moving add to cart*/
+/*
 remove_action( 'woocommerce_single_product_summary','woocommerce_template_single_add_to_cart', 30 );
 add_action( 'woocommerce_single_product_summary','woocommerce_template_single_add_to_cart', 50 );
+
+add_action( 'woocommerce_after_order_notes', 'wordimpress_custom_checkout_field' );
+*/
+
+
+
+/*---Move Product price by moving add to cart*/
+remove_action( 'woocommerce_single_product_summary','woocommerce_template_single_add_to_cart', 30 );
+add_action( 'woocommerce_single_product_summary','woocommerce_template_single_add_to_cart', 50 );
+
+function get_tax_and_ancestors($object_id = 0, $object_type = '') {
+    $object_id = (int) $object_id;
+
+    $ancestors = array();
+
+    if ( empty( $object_id ) ) {
+
+        /** This filter is documented in wp-includes/taxonomy.php */
+        return apply_filters( 'get_ancestors', $ancestors, $object_id, $object_type );
+    }
+
+    if ( is_taxonomy_hierarchical( $object_type ) ) {
+        $term = get_term($object_id, $object_type);
+        $ancestors[] = $term ;
+        while ( ! is_wp_error($term) && ! empty( $term->parent ) && ! in_array( $term->parent, $ancestors ) ) {
+            $ancestors[] = (int) $term->parent;
+            $term = get_term($term->parent, $object_type);
+        }
+    } elseif ( post_type_exists( $object_type ) ) {
+        $ancestors = get_post_ancestors($object_id);
+    }
+
+    /**
+     * Filter a given object's ancestors.
+     *
+     * @since 3.1.0
+     *
+     * @param array  $ancestors   An array of object ancestors.
+     * @param int    $object_id   Object ID.
+     * @param string $object_type Type of object.
+     */
+    return apply_filters( 'get_ancestors', $ancestors, $object_id, $object_type );
+}
+
+
+function register_my_new_menus() {
+    register_nav_menu('piante-menu',__( 'Piante Menu' ));
+}
+add_action( 'init', 'register_my_new_menus' );
+
