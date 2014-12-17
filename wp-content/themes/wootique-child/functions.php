@@ -3,14 +3,19 @@
 /* You can add custom functions below */
 /*-----------------------------------------------------------------------------------*/
 //aggiunto menu 
-function register_my_menus() {
+function register_gorra_menus() {
 	register_nav_menus(
-		array('categoriesMenu' => 'Menu Genere' )
+		array(
+            'categoriesMenu' => 'Menu Genere',
+            'pianteMenu' => 'Piante Menu',
+            'carrelloMenu' => 'Carrello Menu'
+
+        )
 	);
 }
-add_action( 'init', 'register_my_menus' );
+add_action( 'init', 'register_gorra_menus' );
 
-//classe body custom per colori della pagina 
+//classe body custom per colori della pagina
 // add category nicenames in body class
 /*
 function category_id_class($classes) {
@@ -276,9 +281,266 @@ function get_tax_and_ancestors($object_id = 0, $object_type = '') {
     return apply_filters( 'get_ancestors', $ancestors, $object_id, $object_type );
 }
 
+/*
 
-function register_my_new_menus() {
-    register_nav_menu('piante-menu',__( 'Piante Menu' ));
+function wptt_cat_order( $args ){
+
+    $args['orderby'] = 'slug';
+    $args['order'] = 'DESC';
+    $args['child_of'] = '2';
+    $args['menu_order']   = 'ASC';
+    $args['hide_empty']   = '0';
+    $args['hierarchical'] = '2';
+    $args['taxonomy']     = 'product_cat';
+    $args['pad_counts']   = '1';
+    return $args;
+
+} // wptt_cat_order
+add_filter( 'woocommerce_product_subcategories_args', 'wptt_cat_order' );
+*/
+/*
+            'parent'       => $parent_id,
+            'child_of'     => 2,
+            'menu_order'   => 'ASC',
+            'hide_empty'   => 0,
+            'hierarchical' => 2,
+            'taxonomy'     => 'product_cat',
+            'pad_counts'   => 1
+*/
+
+//http://wpthemetutorial.com/2014/03/20/change-product-category-order-woocommerce/ -> scrivi ci un articolo sopra
+
+
+//Add Alphabetical sorting option to shop page / WC Product Settings
+/*
+function sv_alphabetical_woocommerce_shop_ordering( $sort_args ) {
+    $orderby_value = isset( $_GET['orderby'] ) ? woocommerce_clean( $_GET['orderby'] ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
+
+    //if ( 'alphabetical' == $orderby_value ) {
+        $sort_args['orderby'] = 'slug';
+        $sort_args['order'] = 'ASC';
+        $sort_args['meta_key'] = '';
+    //}
+
+    return $sort_args;
 }
-add_action( 'init', 'register_my_new_menus' );
+add_filter( 'woocommerce_get_catalog_ordering_args', 'sv_alphabetical_woocommerce_shop_ordering' );
+*/
+/*
+function sv_custom_woocommerce_catalog_orderby( $sortby ) {
+    $sortby['alphabetical'] = 'Sort by name: alphabetical';
+    return $sortby;
+}
+add_filter( 'woocommerce_default_catalog_orderby_options', 'sv_custom_woocommerce_catalog_orderby' );
+add_filter( 'woocommerce_catalog_orderby', 'sv_custom_woocommerce_catalog_orderby' );
+*/
+/*
+add_filter( 'woocommerce_get_catalog_ordering_args','custom_query_sort_args' );
+function custom_query_sort_args() {
+// Sort by and order
+    $current_order = ( isset( $_SESSION['orderby'] ) ) ? $_SESSION['orderby'] : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
+    echo "order -> ".$current_order;
+    switch ( $current_order ) {
+        case 'date' :
+            $orderby = 'date';
+            $order = 'desc';
+            $meta_key = '';
+            break;
+        case 'price' :
+            $orderby = 'meta_value_num';
+            $order = 'asc';
+            $meta_key = '_price';
+            break;
+        case 'title' :
+            $orderby = 'meta_value';
+            $order = 'asc';
+            $meta_key = '_woocommerce_product_short_title';
+            break;
+        default :
+            $orderby = 'menu_order title';
+            $order = 'asc';
+            $meta_key = '';
+            break;
+    }
+    $args = array();
+    //$orderby="slug";
+    $args['orderby'] = $orderby;
+    $args['order'] = $order;
+    if ($meta_key) :
+        $args['meta_key'] = $meta_key;
+    endif;
+    return $args;
+}*/
 
+//Add Alphabetical sorting option to shop page / WC Product Settings
+/*
+function sv_alphabetical_woocommerce_shop_ordering( $sort_args ) {
+    $orderby_value = isset( $_GET['orderby'] ) ? woocommerce_clean( $_GET['orderby'] ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
+
+    if ( 'alphabetical' == $orderby_value ) {
+        $sort_args['orderby'] = 'slug';
+        $sort_args['order'] = 'asc';
+        $sort_args['meta_key'] = '';
+    }
+
+    return $sort_args;
+}
+add_filter( 'woocommerce_get_catalog_ordering_args', 'sv_alphabetical_woocommerce_shop_ordering' );
+
+function sv_custom_woocommerce_catalog_orderby( $sortby ) {
+    $sortby['slug'] = 'Ordinamento alfabetico per: slug';
+    return $sortby;
+}
+add_filter( 'woocommerce_default_catalog_orderby_options', 'sv_custom_woocommerce_catalog_orderby' );
+add_filter( 'woocommerce_catalog_orderby', 'sv_custom_woocommerce_catalog_orderby' );
+*/
+
+/*
+add_filter( 'woocommerce_get_catalog_ordering_args', 'custom_woocommerce_get_catalog_ordering_args' );
+function custom_woocommerce_get_catalog_ordering_args( $args ) {
+    $orderby_value = isset( $_GET['orderby'] ) ? woocommerce_clean( $_GET['orderby'] ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
+    if ( 'random_list' == $orderby_value ) {
+        $args['orderby'] = 'rand';
+        $args['order'] = '';
+        $args['meta_key'] = '';
+    }
+    return $args;
+}
+add_filter( 'woocommerce_default_catalog_orderby_options', 'custom_woocommerce_catalog_orderby' );
+add_filter( 'woocommerce_catalog_orderby', 'custom_woocommerce_catalog_orderby' );
+function custom_woocommerce_catalog_orderby( $sortby ) {
+    $sortby['random_list'] = 'Random';
+    return $sortby;
+}
+*/
+
+add_filter( 'woocommerce_get_catalog_ordering_args', 'custom_woocommerce_get_catalog_ordering_args' );
+function custom_woocommerce_get_catalog_ordering_args( $args ) {
+    $orderby_value = isset( $_GET['orderby'] ) ? woocommerce_clean( $_GET['orderby'] ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
+    if ( 'slug_list' == $orderby_value ) {
+        $args['orderby'] = 'slug';
+        $args['order'] = 'ASC';
+        $args['meta_key'] = '';
+    }
+    return $args;
+}
+add_filter( 'woocommerce_default_catalog_orderby_options', 'custom_woocommerce_catalog_orderby' );
+add_filter( 'woocommerce_catalog_orderby', 'custom_woocommerce_catalog_orderby' );
+function custom_woocommerce_catalog_orderby( $sortby ) {
+    $sortby['slug_list'] = 'Ordina alfabeticamente';
+    return $sortby;
+}
+
+
+
+class My_Category_Walker extends Walker_Category {
+
+    var $lev = -1;
+    var $skip = 0;
+    static $current_parent;
+
+    function start_lvl( &$output, $depth = 0, $args = array() ) {
+        $this->lev = 0;
+        $output .= "<ul>" . PHP_EOL;
+    }
+
+    function end_lvl( &$output, $depth = 0, $args = array() ) {
+        $output .= "</ul>" . PHP_EOL;
+        $this->lev = -1;
+    }
+
+    function start_el( &$output, $category, $depth = 0, $args = array(), $id = 0 ) {
+        extract($args);
+        $cat_name = esc_attr( $category->name );
+        $class_current = $current_class ? $current_class . ' ' : 'current ';
+        if ( ! empty($current_category) ) {
+            $_current_category = get_term( $current_category, $category->taxonomy );
+            if ( $category->term_id == $current_category ) $class = $class_current;
+            elseif ( $category->term_id == $_current_category->parent ) $class = rtrim($class_current) . '-parent ';
+        } else {
+            $class = '';
+        }
+        if ( ! $category->parent ) {
+            if ( ! get_term_children( $category->term_id, $category->taxonomy ) ) {
+                $this->skip = 1;
+            } else {
+                if ($class == $class_current) self::$current_parent = $category->term_id;
+                //$output .= "<li class='" . $class . $level_class . "'>" . PHP_EOL;
+                //$output .= sprintf($parent_title_format, $cat_name) . PHP_EOL;
+            }
+        } else {
+            if ( $this->lev == 0 && $category->parent) {
+                $link = get_term_link(intval($category->parent) , $category->taxonomy);
+                $stored_parent = intval(self::$current_parent);
+                $now_parent = intval($category->parent);
+                $all_class = ($stored_parent > 0 && ( $stored_parent === $now_parent) ) ? $class_current . ' all' : 'all';
+                //$output .= "<li class='" . $all_class . "'><a href='" . $link . "'>" . __('All') . "</a></li>\n";
+                self::$current_parent = null;
+            }
+            if($category->parent==13 OR $category->parent==15){//escludo i link se il parent è graminacee o stocazzo
+                $link = $cat_name ;
+                $output .= "<li";
+                $class .= $category->taxonomy . '-item '.$category->taxonomy . '-high ' . $category->taxonomy . '-item-' . $category->term_id;
+                $output .=  ' class="' . $class . '"';
+                $output .= ">" . $link;
+            }else{
+                $link = '<a href="' . esc_url( get_term_link($category) ) . '" >' . $cat_name . '</a>';
+                if ( ! empty( $args['show_count'] ) ) {
+                    $link .= ' (' . number_format_i18n( $category->count ) . ')';
+                }
+                $output .= "<li";
+                $class .= $category->taxonomy . '-item ' . $category->taxonomy . '-item-' . $category->term_id;
+                $output .=  ' class="' . $class . '"';
+                $output .= ">" . $link;
+            }
+        }
+    }
+
+    function end_el( &$output, $page, $depth = 0, $args = array() ) {
+        $this->lev++;
+        if ( $this->skip == 1 ) {
+            $this->skip = 0;
+            return;
+        }
+        $output .= "</li>" . PHP_EOL;
+    }
+
+}
+
+function gorra_list_categories( $args = '' ) {
+    $defaults = array(
+        'taxonomy' => 'product_cat',
+        'show_option_none' => '',
+        'echo' => 1,
+        'depth' => 3,
+        'wrap_class' => '',
+        'level_class' => '',
+        'parent_title_format' => '%s',
+        'current_class' => 'current',
+        'show_count' => 1
+    );
+
+    $r = wp_parse_args( $args, $defaults );
+
+    if ( !isset( $r['pad_counts'] ) && $r['show_count'] && $r['hierarchical'] )
+        $r['pad_counts'] = true;
+
+    if ( ! isset( $r['wrap_class'] ) ) $r['wrap_class'] = ( 'category' == $r['taxonomy'] ) ? 'categories' : $r['taxonomy'];
+    extract( $r );
+    if ( ! taxonomy_exists($taxonomy) ) return false;
+    $categories = get_categories( $r );
+    $output = "<ul class='" . esc_attr( $wrap_class ) . "'>" . PHP_EOL;
+    if ( empty( $categories ) ) {
+        if ( ! empty( $show_option_none ) ) $output .= "<li>" . $show_option_none . "</li>" . PHP_EOL;
+    } else {
+        if ( is_category() || is_tax() || is_tag() ) {
+            $current_term_object = get_queried_object();
+            if ( $r['taxonomy'] == $current_term_object->taxonomy ) $r['current_category'] = get_queried_object_id();
+        }
+        $depth = $r['depth'];
+        $walker = new My_Category_Walker;
+        $output .= $walker->walk($categories, $depth, $r);
+    }
+    $output .= "</ul>" . PHP_EOL;
+    if ( $echo ) echo $output; else return $output;
+}
