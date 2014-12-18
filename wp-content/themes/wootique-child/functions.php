@@ -422,3 +422,6 @@ function gorra_list_categories( $args = '' ) {
     $output .= "</ul>" . PHP_EOL;
     if ( $echo ) echo $output; else return $output;
 }
+
+
+/*prova di commit per un update*/
