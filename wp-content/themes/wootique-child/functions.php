@@ -2,7 +2,9 @@
 /*-----------------------------------------------------------------------------------*/
 /* You can add custom functions below */
 /*-----------------------------------------------------------------------------------*/
-//aggiunto menu 
+
+/*-------------------------------aggiunto menu----------------------------------------------------*/
+
 function register_gorra_menus() {
 	register_nav_menus(
 		array(
@@ -14,6 +16,8 @@ function register_gorra_menus() {
 	);
 }
 add_action( 'init', 'register_gorra_menus' );
+
+/*-------------------------------aggiunto menu----------------------------------------------------*/
 
 //classe body custom per colori della pagina
 // add category nicenames in body class
@@ -281,147 +285,20 @@ function get_tax_and_ancestors($object_id = 0, $object_type = '') {
     return apply_filters( 'get_ancestors', $ancestors, $object_id, $object_type );
 }
 
-/*
-
-function wptt_cat_order( $args ){
-
-    $args['orderby'] = 'slug';
-    $args['order'] = 'DESC';
-    $args['child_of'] = '2';
-    $args['menu_order']   = 'ASC';
-    $args['hide_empty']   = '0';
-    $args['hierarchical'] = '2';
-    $args['taxonomy']     = 'product_cat';
-    $args['pad_counts']   = '1';
-    return $args;
-
-} // wptt_cat_order
-add_filter( 'woocommerce_product_subcategories_args', 'wptt_cat_order' );
-*/
-/*
-            'parent'       => $parent_id,
-            'child_of'     => 2,
-            'menu_order'   => 'ASC',
-            'hide_empty'   => 0,
-            'hierarchical' => 2,
-            'taxonomy'     => 'product_cat',
-            'pad_counts'   => 1
-*/
-
 //http://wpthemetutorial.com/2014/03/20/change-product-category-order-woocommerce/ -> scrivi ci un articolo sopra
 
 
-//Add Alphabetical sorting option to shop page / WC Product Settings
-/*
-function sv_alphabetical_woocommerce_shop_ordering( $sort_args ) {
-    $orderby_value = isset( $_GET['orderby'] ) ? woocommerce_clean( $_GET['orderby'] ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
-
-    //if ( 'alphabetical' == $orderby_value ) {
-        $sort_args['orderby'] = 'slug';
-        $sort_args['order'] = 'ASC';
-        $sort_args['meta_key'] = '';
-    //}
-
-    return $sort_args;
-}
-add_filter( 'woocommerce_get_catalog_ordering_args', 'sv_alphabetical_woocommerce_shop_ordering' );
-*/
-/*
-function sv_custom_woocommerce_catalog_orderby( $sortby ) {
-    $sortby['alphabetical'] = 'Sort by name: alphabetical';
-    return $sortby;
-}
-add_filter( 'woocommerce_default_catalog_orderby_options', 'sv_custom_woocommerce_catalog_orderby' );
-add_filter( 'woocommerce_catalog_orderby', 'sv_custom_woocommerce_catalog_orderby' );
-*/
-/*
-add_filter( 'woocommerce_get_catalog_ordering_args','custom_query_sort_args' );
-function custom_query_sort_args() {
-// Sort by and order
-    $current_order = ( isset( $_SESSION['orderby'] ) ) ? $_SESSION['orderby'] : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
-    echo "order -> ".$current_order;
-    switch ( $current_order ) {
-        case 'date' :
-            $orderby = 'date';
-            $order = 'desc';
-            $meta_key = '';
-            break;
-        case 'price' :
-            $orderby = 'meta_value_num';
-            $order = 'asc';
-            $meta_key = '_price';
-            break;
-        case 'title' :
-            $orderby = 'meta_value';
-            $order = 'asc';
-            $meta_key = '_woocommerce_product_short_title';
-            break;
-        default :
-            $orderby = 'menu_order title';
-            $order = 'asc';
-            $meta_key = '';
-            break;
-    }
-    $args = array();
-    //$orderby="slug";
-    $args['orderby'] = $orderby;
-    $args['order'] = $order;
-    if ($meta_key) :
-        $args['meta_key'] = $meta_key;
-    endif;
-    return $args;
-}*/
-
-//Add Alphabetical sorting option to shop page / WC Product Settings
-/*
-function sv_alphabetical_woocommerce_shop_ordering( $sort_args ) {
-    $orderby_value = isset( $_GET['orderby'] ) ? woocommerce_clean( $_GET['orderby'] ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
-
-    if ( 'alphabetical' == $orderby_value ) {
-        $sort_args['orderby'] = 'slug';
-        $sort_args['order'] = 'asc';
-        $sort_args['meta_key'] = '';
-    }
-
-    return $sort_args;
-}
-add_filter( 'woocommerce_get_catalog_ordering_args', 'sv_alphabetical_woocommerce_shop_ordering' );
-
-function sv_custom_woocommerce_catalog_orderby( $sortby ) {
-    $sortby['slug'] = 'Ordinamento alfabetico per: slug';
-    return $sortby;
-}
-add_filter( 'woocommerce_default_catalog_orderby_options', 'sv_custom_woocommerce_catalog_orderby' );
-add_filter( 'woocommerce_catalog_orderby', 'sv_custom_woocommerce_catalog_orderby' );
-*/
-
-/*
-add_filter( 'woocommerce_get_catalog_ordering_args', 'custom_woocommerce_get_catalog_ordering_args' );
-function custom_woocommerce_get_catalog_ordering_args( $args ) {
-    $orderby_value = isset( $_GET['orderby'] ) ? woocommerce_clean( $_GET['orderby'] ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
-    if ( 'random_list' == $orderby_value ) {
-        $args['orderby'] = 'rand';
-        $args['order'] = '';
-        $args['meta_key'] = '';
-    }
-    return $args;
-}
-add_filter( 'woocommerce_default_catalog_orderby_options', 'custom_woocommerce_catalog_orderby' );
-add_filter( 'woocommerce_catalog_orderby', 'custom_woocommerce_catalog_orderby' );
-function custom_woocommerce_catalog_orderby( $sortby ) {
-    $sortby['random_list'] = 'Random';
-    return $sortby;
-}
-*/
+//=================================inserisco l'ordine alfabetico=================================
 
 add_filter( 'woocommerce_get_catalog_ordering_args', 'custom_woocommerce_get_catalog_ordering_args' );
 function custom_woocommerce_get_catalog_ordering_args( $args ) {
     $orderby_value = isset( $_GET['orderby'] ) ? woocommerce_clean( $_GET['orderby'] ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
     if ( 'slug_list' == $orderby_value ) {
-        $args['orderby'] = 'slug';
+        $args['orderby'] = 'name';
         $args['order'] = 'ASC';
         $args['meta_key'] = '';
     }
+    //print_r($args);
     return $args;
 }
 add_filter( 'woocommerce_default_catalog_orderby_options', 'custom_woocommerce_catalog_orderby' );
@@ -431,6 +308,7 @@ function custom_woocommerce_catalog_orderby( $sortby ) {
     return $sortby;
 }
 
+//=================================inserisco l'ordine alfabetico=================================
 
 
 class My_Category_Walker extends Walker_Category {
