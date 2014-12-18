@@ -8,6 +8,9 @@ function register_my_menus() {
 		array('categoriesMenu' => 'Menu Genere' )
 	);
 }
+//xdfgxfgdf
+
+
 add_action( 'init', 'register_my_menus' );
 
 //classe body custom per colori della pagina 
