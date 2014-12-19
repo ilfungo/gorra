@@ -20,12 +20,50 @@ get_header( 'shop' ); ?>
 		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
 		 * @hooked woocommerce_breadcrumb - 20
 		 */
+
+        global $wp_query;
+        $term = $wp_query->get_queried_object();
+
 		do_action( 'woocommerce_before_main_content' );
 	?>
-
 		<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+            <?php
+            $parent_term = get_term($term->parent, "product_cat" );
+            $grand_parent_term = get_term($parent_term->parent, "product_cat" );
+            //print_r($term);
+            //print_r($parent_term);
+            //print_r($grand_parent_term);
 
-			<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
+            $product_categories_all_hierachy = get_tax_and_ancestors( $term->term_id, 'product_cat' );
+            //print_r($product_categories_all_hierachy);
+            if($term->parent==14 || $term->parent==226){
+            $variable = get_field('tiplogia_categoria', $term);
+            ?>
+            <div id="<?php echo $variable ?>">
+			    <h1 class="page-title"><?php echo $parent_term->name ." "; woocommerce_page_title(); ?></h1>
+            </div>
+            <?php }elseif($grand_parent_term->term_id==14 || $grand_parent_term->term_id==226){
+            $variable = get_field('tiplogia_categoria', $term);
+            ?>
+            <div id="<?php echo $variable ?>">
+            <h1 class="page-title"><?php echo $grand_parent_term->name ." ";echo $parent_term->name ." - "; woocommerce_page_title(); ?></h1>
+            </div>
+            <?php }else{
+            $variable = get_field('tiplogia_categoria', $term);?>
+            <div id="<?php echo $variable ?>">
+            <h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
+            </div>
+            <?php }
+            foreach($product_categories_all_hierachy as $product_category){
+                $this_term = get_term($product_category, "product_cat" );
+                $variable = get_field('tiplogia_categoria', $this_term);
+                if($variable=="famiglia"){
+                    $link = get_term_link( $this_term, 'product_cat' );
+                    echo "<div  class=\"famiglia\">Famiglia: <b class=\"famiglia\"><a href=\"".$link."\">".$this_term->name."</a></b></div> ";
+                }
+            }
+            ?>
+
 
 		<?php endif; ?>
 
@@ -46,12 +84,12 @@ get_header( 'shop' ); ?>
 			<?php woocommerce_product_loop_start(); ?>
 
 				<?php
-                global $wp_query;
-                $term = $wp_query->get_queried_object();
-                if($term->term_id==13){
+                if($term->term_id==13 OR $term->term_id==15){
                     //print_r($term);
+                    //echo "passo da qui";
                     woocommerce_product_sub_subcategories();
                 }else{
+                    //echo "passo da qua";
                     woocommerce_product_subcategories();
                 }
                 ?>

@@ -1,4 +1,4 @@
-﻿<?php
+﻿﻿<?php
 /*
 Plugin Name: WooCommerce Pre Ordine Gateway
 Plugin URI: http://woothemes.com/woocommerce
@@ -20,7 +20,7 @@ load_plugin_textdomain('wc-gateway-pre_ordine', false, dirname( plugin_basename(
 /**
 * Gateway class
 */
-class WC_Gateway_Pre_ordine extends WC_Payment_Gateway {
+class WC_Gateway_Pre_ordine extends WC_Payment_Gateway { 
 
     /**
      * Constructor for the gateway.
@@ -72,7 +72,7 @@ class WC_Gateway_Pre_ordine extends WC_Payment_Gateway {
 				'title'       => __( 'Description', 'woocommerce' ),
 				'type'        => 'textarea',
 				'description' => __( 'Descrizione del metodo di pagamento che il cliente visualizzerà nella pagina di checkout.', 'woocommerce' ),
-				'default'     => __( 'Non è possibile completare il pagamento finchè non ci assicuriamo che tutte le piante richieste siano in serra. Completa il tuo ordine, verificheremo di poterlo soddisfare e poi ti contatteremo per confermarlo.', 'woocommerce' ),
+				'default'     => __( 'Dopo aver verificato in vivaio le disponibilità, ti manderemo nel più breve tempo possibile la conferma, con indicazione delle spese di  spedizione. Se  qualcuna tra le piante richieste fosse disponibile solo in un formato di vaso minore o superiore rispetto a quello standard, te lo indicheremo dettagliatamente nella conferma insieme al relativo adeguamento del prezzo. Nel caso di una specie o varietà non disponibile ti proporremo la sostituzione con un altra il più possibile simile. ', 'woocommerce' ),
 				'desc_tip'    => true,
 			),
 			'instructions' => array(

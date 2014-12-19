@@ -109,7 +109,7 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
 	}		
 
 	if(get_field('densità_mq')!=""){
-		echo "<span class=\"mylabel\">Densità: <span class=\"myvalue\">". get_field('densità_mq')." esemplari/mq </span></span>";
+		echo "<span class=\"mylabel\">Densità: </span><span class=\"myvalue\">". get_field('densità_mq')." esemplari/m² </span>";
 		echo "<br />";			
 	}				
 

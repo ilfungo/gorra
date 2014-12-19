@@ -234,7 +234,6 @@ class WC_Query {
 		} elseif ( ! $q->is_post_type_archive( 'product' ) && ! $q->is_tax( get_object_taxonomies( 'product' ) ) ) {
 			return;
 		}
-
 		$this->product_query( $q );
 
 		if ( is_search() ) {
@@ -377,7 +376,9 @@ class WC_Query {
 
 		// Query vars that affect posts shown
 		$q->set( 'meta_query', $meta_query );
+        //meta_queryArray ( [0] => Array ( [key] => _visibility [value] => Array ( [0] => visible [1] => catalog ) [compare] => IN ) )
 		$q->set( 'post__in', $post__in );
+        //post__inArray ( )
 		$q->set( 'posts_per_page', $q->get( 'posts_per_page' ) ? $q->get( 'posts_per_page' ) : apply_filters( 'loop_shop_per_page', get_option( 'posts_per_page' ) ) );
 
 		// Set a special variable
@@ -386,7 +387,7 @@ class WC_Query {
 		// Store variables
 		$this->post__in   = $post__in;
 		$this->meta_query = $meta_query;
-
+        //print_r($q);
 		do_action( 'woocommerce_product_query', $q, $this );
 	}
 

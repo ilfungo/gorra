@@ -37,24 +37,11 @@ $slug="";
 
 global $wp;
 $permalink_str = str_replace("/", " ", $wp->request);
-//echo $current_url = add_query_arg( $wp->query_string, '', home_url( $wp->request ) );
-/*
-if (is_single()) {
-    global $post;
-    $cat='';
-    //print_r($post);
-    $cats = get_the_category($post->ID);
-    foreach ( $cats as $c ) {
-        $cat .= $c->category_nicename.' ';
-    }
-    echo $cat;
-}
-*/
+
     global $product;
     $slug2="";
     //if(isset($product)){
         $product_cats = get_the_terms($product->id, 'product_cat');
-        //print_r($product_cats);
         $slug1 = "";$id=0;$css_color="";$superCategoryCss = "";
         foreach($product_cats as $product_cat){
             $slug1 = $slug1 ." ". $product_cat->slug;
@@ -64,16 +51,19 @@ if (is_single()) {
 
         $slug2 = get_term_all_parents($id,$product->id,'product_cat');
         $slug2 = $permalink_str." ".$slug2." ".$slug1;
-        if (strpos($slug2,'aster') !== false) {
+
+        //print_r($slug2 );
+
+        if (strpos($slug2,' aster ') !== false) {
             $slug2 = "aster";
-        }elseif(strpos($slug2,'graminacee') !== false) {
+        }elseif(strpos($slug2,' graminacee ') !== false) {
             $slug2 = "graminacee";
-        }elseif(strpos($slug2,'sedum-crassulaceae') !== false) {
+        }elseif(strpos($slug2,' sedum-crassulaceae ') !== false) {
             $slug2 = "sedum-crassulaceae";
         }
 
     //}
-echo "slug2".$slug2;
+    //echo "slug2".$slug2;
 
 
 ?>
