@@ -231,12 +231,12 @@ if(!class_exists('uwpqsfprocess')){
 							
 		$arg = apply_filters( 'uwpqsf_deftemp_query', $args, $id, $getdata);
 
-
 		foreach($arg as $k => $v){
          		$query->set( $k, $v );
 		}
         //si qui c'è la query finale??
-		//print_r($query);
+		print_r($query);
+        //print_r($arg);
 		//exit();
 		return $query; 
             }	
