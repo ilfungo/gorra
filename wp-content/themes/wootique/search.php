@@ -9,7 +9,7 @@
 			
 			<?php if (have_posts()) : $count = 0; ?>
             
-            <span class="archive_header"><?php _e( 'Search results:', 'woothemes' ) ?> <?php the_search_query();?></span>
+            <span class="archive_header"><?php _e( 'Search results :', 'woothemes' ) ?> <?php the_search_query();?></span>
                 
             <?php while (have_posts()) : the_post(); $count++; ?>
                                                                         

@@ -66,7 +66,8 @@ get_currentuserinfo();
 $ruolo=$current_user->roles;
 $login=$current_user->user_login;
 //echo "ruolo -> ".$ruolo[0];    
-    	
+
+/*scrivo un commenttino qui*/
 
 /*if($ruolo[0]=="administrator"){
 	echo $login;
@@ -85,7 +86,7 @@ echo '<div id="bottom_debug">';
       }
   }
 echo '</div>';
-}
+}//qggiungo un commento
 ?>
 </body>
 </html>

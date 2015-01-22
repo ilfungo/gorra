@@ -215,6 +215,12 @@ function get_term_all_parents($term_id, $post_id, $taxonomy){
 }
 
 // Remove prices
+
 remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
+
+//category on single-product
+
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_category', 4 );
+
 ?>
 

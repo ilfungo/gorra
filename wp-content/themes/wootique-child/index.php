@@ -44,7 +44,7 @@
 		<div id="main" class="col-left">
 
 			<div class="product-gallery">
-				<h2><?php _e( 'Recent Products', 'woothemes' ); ?></h2>
+				<h2><?php _e( 'Prodotti recenti', 'woothemes' ); ?></h2>
 				<?php echo do_shortcode( '[recent_products per_page="12" columns="3"]' ); ?>
 			</div><!--/.product-gallery-->
 
@@ -55,7 +55,7 @@
     </div>
 	
 	<div id="featured-products" class="<?php if ( get_option( 'woo_featured_product_style' ) == 'slider' ) { echo 'fp-slider'; } ?>">
-		<h2><?php _e( 'Featured Products', 'woothemes' ); ?></h2>
+		<h2><?php _e( 'Prodotti in evidenza', 'woothemes' ); ?></h2>
 
 		<ul class="featured-products">
 <?php

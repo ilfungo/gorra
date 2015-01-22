@@ -118,11 +118,12 @@
                         ));?>
                 <?
                 }
-        }else{ ?>
+        }
+        elseif(is_home()){ ?>
 		<div class="primary">
 			<?php //woo_sidebar( 'primary' ); ?>
-            <?php wp_nav_menu(array('theme_location' => 'carrelloMenu','container' => '',));?>
-		</div>        
+            <?php wp_nav_menu(array('theme_location' => 'sidebarHome','container' => '',));?>
+		</div>
 		<?php 
 }
 	endif;?>    

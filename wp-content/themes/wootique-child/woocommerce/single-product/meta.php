@@ -58,7 +58,7 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
     $note_terreno = get_field('note_terreno');
 
     if($note_terreno!=""){
-        echo "<span class=\"mylabel\">Note terreni: </span>";
+        echo "<span class=\"mylabel\">Terreno: </span>";
         echo "<span class=\"myvalue\">".$note_terreno."</span>";
         echo "<br />";
     }elseif(get_field('terreno')!=""){
@@ -109,7 +109,7 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
 	}		
 
 	if(get_field('densità_mq')!=""){
-		echo "<span class=\"mylabel\">Densità: </span><span class=\"myvalue\">". get_field('densità_mq')." esemplari/m² </span>";
+		echo "<span class=\"mylabel\">Numero esemplari /m² : </span><span class=\"myvalue\">". get_field('densità_mq')."</span>";
 		echo "<br />";			
 	}				
 
@@ -126,7 +126,7 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
 	}	
 
 	if(get_field('resistenza_al_freddo')!=""){
-		echo "<span class=\"mylabel\">Resistente fino a: </span>";
+		echo "<span class=\"mylabel\">Resistenza al freddo: </span>";
 		echo "<span class=\"myvalue\">";
 		the_field('resistenza_al_freddo');
 		echo "</span>";

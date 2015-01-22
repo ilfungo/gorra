@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" promptOnRemoteOverwrite="CHECK_CONTENT" serverName="gorra" persistUploadOnCheckin="false" exclude=".svn;.cvs;.idea;.DS_Store;.git;.hg;wp-config.php;.idea" showNewOnSourceInSync="false" showNewOnTargetInSync="false">
+    <serverData>
+      <paths name="gorra">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/wp-includes" />
+            <excludedPath path="/wc-logs" />
+            <excludedPath path="/wp-admin" />
+            <excludedPath path="/wp-content/uploads" />
+            <excludedPath path="/wp-content/upgrade" />
+            <excludedPath local="true" path="$PROJECT_DIR$/wp-includes" />
+            <excludedPath local="true" path="$PROJECT_DIR$/wc-logs" />
+            <excludedPath local="true" path="$PROJECT_DIR$/wp-admin" />
+            <excludedPath local="true" path="$PROJECT_DIR$/wp-content/uploads" />
+            <excludedPath local="true" path="$PROJECT_DIR$/wp-content/upgrade" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
+

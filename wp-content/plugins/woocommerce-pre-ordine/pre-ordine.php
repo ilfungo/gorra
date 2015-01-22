@@ -20,7 +20,7 @@ load_plugin_textdomain('wc-gateway-pre_ordine', false, dirname( plugin_basename(
 /**
 * Gateway class
 */
-class WC_Gateway_Pre_ordine extends WC_Payment_Gateway { 
+class WC_Gateway_Pre_ordine extends WC_Payment_Gateway {
 
     /**
      * Constructor for the gateway.
@@ -84,6 +84,7 @@ class WC_Gateway_Pre_ordine extends WC_Payment_Gateway {
 			),
 		);
     }
+ 
 
     /**
      * Output for the order received page.

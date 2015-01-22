@@ -104,7 +104,7 @@ if(!class_exists('uwpqsfront')){
 				}				
 				foreach ( $opts as $opt ) {
                     //print_r($opt);
-				    $val = explode('::',$opt);
+				    $val = explode('::',$opt); 
                     //print_r($val);
 					$checked = (isset($_GET['cmf'][$i]['value']) && in_array($val[0],$_GET['cmf'][$i]['value']) ) ? 'checked="checked"' : '';
 				        $html .= '<label><input type="checkbox" id="cmf-'.$i.'" name="cmf['.$i.'][value]" value="'.$val[0].'" '.$checked.'>'.$val[1].'</label>';

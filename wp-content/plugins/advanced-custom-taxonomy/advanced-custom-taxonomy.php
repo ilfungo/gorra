@@ -108,7 +108,7 @@ function register_taxonomy_mesi() {
     );
     register_taxonomy( 'mesi', array('product'), $args );
 } */
-
+/*
 add_action( 'init', 'register_taxonomy_genere' );
 
 function register_taxonomy_genere() {
@@ -141,4 +141,4 @@ function register_taxonomy_genere() {
     'query_var' => true
     );
     register_taxonomy( 'genere', array('product'), $args );
-} 
+} */

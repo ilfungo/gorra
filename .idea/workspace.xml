@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="395cee21-61d1-4a1a-8ad6-e2e5d049f32e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bts/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bts/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bts/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bts/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bts/.idea/encodings.xml" />
+    </list>
+    <list id="d87fe3b6-db4f-4e54-ad90-62a46c9d157b" name="Failed commit: Default" comment="Questo è il push prima di acquisire i file aggiornati da wordpress 2">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bts/.idea/bts.iml" />
+    </list>
+    <ignored path="gorra.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="../bts/.idea/" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="gorra" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="category.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique-child/woocommerce/single-product/category.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="2" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1547">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wc-template-hooks.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-template-hooks.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="134" column="0" selection-start="4502" selection-end="4502" vertical-scroll-proportion="0.0" vertical-offset="2278" max-vertical-offset="3485">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique-child/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="91" column="7" selection-start="2693" selection-end="2693" vertical-scroll-proportion="0.8425926" vertical-offset="1092" max-vertical-offset="1649">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="SYNC_SETTING" value="DONT" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="ilfungo" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="gorra" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/woocommerce/templates/content-product_cat.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/style-custom.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/_style-custom.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/index.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/mystile/functions/admin-functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique/functions/admin-functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique/includes/theme-actions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/woocommerce/single-product/price.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-template-hooks.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/add-to-cart/variable.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/content-product.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/woocommerce/templates/archive-product.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/woocommerce/content-product_cat.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-template-functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/woocommerce/single-product/meta.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/woocommerce/archive-product.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/sidebar.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-query.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/appunti.txt" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/checkout/form-shipping.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/checkout/review-order.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce-pre-ordine/pre-ordine.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/page-1400.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce-fp/woocommerce-template.php" />
+        <option value="$PROJECT_DIR$/corretto.html" />
+        <option value="$PROJECT_DIR$/errato2.html" />
+        <option value="$PROJECT_DIR$/errato.html" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/page-1450.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/page-1452.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique/search-form.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique/includes/theme-woocommerce.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/page-1481.php" />
+        <option value="$PROJECT_DIR$/wp-config.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/ultimate-wp-query-search-filter/classes/uwpqsf-process-class.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/ultimate-wp-query-search-filter/classes/uwpqsf-front-class.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/ultimate-wp-query-search-filter-fp/ultimate-wpqsf.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/ultimate-wp-query-search-filter-fp/classes/uwpqsf-process-class.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/woocommerce/single-product.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/woocommerce/single-product/category.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wootique-child/footer.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1296" />
+    <option name="height" value="1010" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Cucumber</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript function metricsJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>PHPDocPHP</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="gorra">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gorra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gorra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gorra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gorra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gorra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gorra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gorra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wootique-child" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gorra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gorra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bts/.idea" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\gorra\wp-content\plugins\ultimate-wp-query-search-filter\classes" />
+      <recent name="C:\wamp\www\gorra\wp-content\themes\wootique-child" />
+      <recent name="C:\wamp\www\gorra\wp-content\themes\wootique-child\woocommerce\templates" />
+      <recent name="C:\wamp\www\gorra\wp-content\themes\wootique-child\woocommerce" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\gorra" />
+      <recent name="C:\wamp\www\gorra\wp-content\themes\wootique-child\woocommerce" />
+    </key>
+  </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/wp-config.php</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="77e6f687-4b98-465b-9d56-1aa5d32b2490" server_name="gorra">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="true">C:\Users\pc-\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="395cee21-61d1-4a1a-8ad6-e2e5d049f32e" name="Default" comment="" />
+      <created>1417703105302</created>
+      <updated>1417703105302</updated>
+    </task>
+    <task id="LOCAL-00001" summary="per perenni sto mostrando comunque i generi">
+      <created>1418646437795</created>
+      <updated>1418646437795</updated>
+    </task>
+    <task id="LOCAL-00002" summary="categoria, genere, descrittore e sottodescrittore in pagina pianta">
+      <created>1418655705998</created>
+      <updated>1418655705998</updated>
+    </task>
+    <task id="LOCAL-00003" summary="perenni menù alfabetico con ancore">
+      <created>1418725698634</created>
+      <updated>1418725698634</updated>
+    </task>
+    <task id="LOCAL-00004" summary="test commit and push">
+      <created>1418725787332</created>
+      <updated>1418725787332</updated>
+    </task>
+    <task id="LOCAL-00005" summary="pagina ricerca per famiglie!!!&#10;roba pazzesca!!!">
+      <created>1418852971857</created>
+      <updated>1418852971857</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ho depurato un po' functions">
+      <created>1418921665512</created>
+      <updated>1418921665512</updated>
+    </task>
+    <task id="LOCAL-00007" summary="test di commit per update">
+      <created>1418922143019</created>
+      <updated>1418922143019</updated>
+    </task>
+    <task id="LOCAL-00008" summary="commit di fine settimana">
+      <created>1418996100763</created>
+      <updated>1418996100763</updated>
+    </task>
+    <task id="LOCAL-00009" summary="modifica 1 effettuata sul plugin UWPQSF">
+      <created>1419441579023</created>
+      <updated>1419441579023</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Questo è il push prima di acquisire i file aggiornati da wordpress">
+      <created>1421937229523</created>
+      <updated>1421937229524</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1940133" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30931264" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3292683" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2905789" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="per perenni sto mostrando comunque i generi" />
+    <MESSAGE value="categoria, genere, descrittore e sottodescrittore in pagina pianta" />
+    <MESSAGE value="perenni menù alfabetico con ancore" />
+    <MESSAGE value="test commit and push" />
+    <MESSAGE value="pagina ricerca per famiglie!!!&#10;roba pazzesca!!!" />
+    <MESSAGE value="ho depurato un po' functions" />
+    <MESSAGE value="test di commit per update" />
+    <MESSAGE value="commit di fine settimana" />
+    <MESSAGE value="modifica 1 effettuata sul plugin UWPQSF" />
+    <MESSAGE value="Questo è il push prima di acquisire i file aggiornati da wordpress" />
+    <MESSAGE value="Questo è il push prima di acquisire i file aggiornati da wordpress 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Questo è il push prima di acquisire i file aggiornati da wordpress 2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique-child/woocommerce/single-product/title.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="614" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/mystile/functions/admin-functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3151" column="38" selection-start="123983" selection-end="123983" vertical-scroll-proportion="-5.0" vertical-offset="52451" max-vertical-offset="53669" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique-child/woocommerce/single-product/price.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="8" selection-start="899" selection-end="899" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="476" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/content-product_cat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1088" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/content-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="389" selection-end="462" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="1139" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique/functions/admin-sbm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="26" selection-start="222" selection-end="237" vertical-scroll-proportion="0.24335378" vertical-offset="0" max-vertical-offset="489" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/mystile/functions/admin-sbm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="26" selection-start="222" selection-end="237" vertical-scroll-proportion="0.23333333" vertical-offset="0" max-vertical-offset="510" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/add-to-cart/variable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="6" selection-start="4200" selection-end="4200" vertical-scroll-proportion="0.7605634" vertical-offset="1356" max-vertical-offset="1853" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique-child/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1751" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.7" vertical-offset="357" max-vertical-offset="935" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="180" column="16" selection-start="12048" selection-end="12048" vertical-scroll-proportion="0.33333334" vertical-offset="2894" max-vertical-offset="19142" />
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-fp/woocommerce-fp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1224" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/loop/pagination.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="8" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="680" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique-child/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="29" selection-start="5479" selection-end="5479" vertical-scroll-proportion="0.93986636" vertical-offset="1567" max-vertical-offset="2312" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique-child/woocommerce/single-product/meta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="119" selection-start="3670" selection-end="3670" vertical-scroll-proportion="3.4068136" vertical-offset="0" max-vertical-offset="2924" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique-child/appunti.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="202" column="1" selection-start="4848" selection-end="4848" vertical-scroll-proportion="6.540952" vertical-offset="0" max-vertical-offset="3536" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-query.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="389" column="10" selection-start="12190" selection-end="12190" vertical-scroll-proportion="1.5886075" vertical-offset="5724" max-vertical-offset="14314" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique-child/woocommerce/content-product_cat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="51" selection-start="2249" selection-end="2249" vertical-scroll-proportion="0.0" vertical-offset="1190" max-vertical-offset="1411" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/checkout/form-shipping.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="6" selection-start="2159" selection-end="2159" vertical-scroll-proportion="0.7882562" vertical-offset="594" max-vertical-offset="1156" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/checkout/review-order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="166" column="68" selection-start="6983" selection-end="7021" vertical-scroll-proportion="-6.576923" vertical-offset="2549" max-vertical-offset="3281" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/checkout/form-pay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="90" selection-start="2863" selection-end="2896" vertical-scroll-proportion="-52.307693" vertical-offset="0" max-vertical-offset="1632" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/woocommerce.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="567" column="21" selection-start="17152" selection-end="17152" vertical-scroll-proportion="0.0" vertical-offset="9639" max-vertical-offset="15555" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-pre-ordine/pre-ordine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1913" max-vertical-offset="2533" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique-child/page-1400.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="1584" selection-end="1584" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1241" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique-child/woocommerce/archive-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="44" selection-start="851" selection-end="851" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="2431" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique-child/page-1450.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="131" selection-start="746" selection-end="758" vertical-scroll-proportion="-5.8846154" vertical-offset="187" max-vertical-offset="1343" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique-child/page-1452.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="161" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0" vertical-offset="282" max-vertical-offset="1343" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-template-functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1878" column="108" selection-start="53533" selection-end="53533" vertical-scroll-proportion="0.0" vertical-offset="31926" max-vertical-offset="32232" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique/search-form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="83" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="204" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique/includes/theme-woocommerce.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="150" selection-start="1846" selection-end="1846" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="3944" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/ultimate-wp-query-search-filter-fp/classes/uwpqsf-base-class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1649" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="38" selection-start="0" selection-end="1510" vertical-scroll-proportion="0.49275362" vertical-offset="0" max-vertical-offset="833" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique-child/page-1481.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="746" selection-end="1009" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="901" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/ultimate-wp-query-search-filter-fp/classes/uwpqsf-front-class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="4" selection-start="6211" selection-end="6211" vertical-scroll-proportion="-32.307693" vertical-offset="1064" max-vertical-offset="2533" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/ultimate-wp-query-search-filter-fp/ultimate-wpqsf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="55" selection-start="613" selection-end="613" vertical-scroll-proportion="-5.8846154" vertical-offset="102" max-vertical-offset="5695" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/ultimate-wp-query-search-filter-fp/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="51" selection-start="1861" selection-end="1861" vertical-scroll-proportion="-10.038462" vertical-offset="708" max-vertical-offset="1241" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/ultimate-wp-query-search-filter-fp/classes/scripts/uwpqsfscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="32" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1326" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/ultimate-wp-query-search-filter-fp/html/searchform.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="57" selection-start="638" selection-end="638" vertical-scroll-proportion="25.884615" vertical-offset="962" max-vertical-offset="1734" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/ultimate-wp-query-search-filter-fp/admin/list-from-class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="19" selection-start="1656" selection-end="1656" vertical-scroll-proportion="-7.1538463" vertical-offset="885" max-vertical-offset="2584" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/ultimate-wp-query-search-filter-fp/classes/uwpqsf-process-class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="242" column="8" selection-start="8740" selection-end="8740" vertical-scroll-proportion="0.3053435" vertical-offset="3954" max-vertical-offset="7072" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/ultimate-wp-query-search-filter-fp/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1887" />
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique-child/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="151" column="32" selection-start="5893" selection-end="5911" vertical-scroll-proportion="0.0" vertical-offset="2567" max-vertical-offset="2686" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique-child/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="217" column="0" selection-start="6210" selection-end="6210" vertical-scroll-proportion="0.85031444" vertical-offset="3013" max-vertical-offset="3842" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-fp/woocommerce-template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="42" selection-start="349" selection-end="361" vertical-scroll-proportion="-0.064150944" vertical-offset="272" max-vertical-offset="8007" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique-child/woocommerce/single-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="55" selection-start="577" selection-end="577" vertical-scroll-proportion="0.2870929" vertical-offset="0" max-vertical-offset="829" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="15" selection-start="247" selection-end="247" vertical-scroll-proportion="0.21871345" vertical-offset="0" max-vertical-offset="855" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique-child/woocommerce/single-product/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="2" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-template-hooks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="0" selection-start="4502" selection-end="4502" vertical-scroll-proportion="0.0" vertical-offset="2278" max-vertical-offset="3485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique-child/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="16" selection-start="0" selection-end="6854" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="5338" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wootique-child/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="7" selection-start="2693" selection-end="2693" vertical-scroll-proportion="0.8425926" vertical-offset="1092" max-vertical-offset="1649">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+
