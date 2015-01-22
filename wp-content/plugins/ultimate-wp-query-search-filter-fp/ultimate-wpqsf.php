@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Ultimate WP Query Search Filter
+Plugin Name: Ultimate WP Query Search Filter FP mods
 Plugin URI: http://www.9-sec.com/
-Description: This plugin let you using wp_query to filter taxonomy,custom meta and post type as search result.
+Description: This plugin let you using wp_query to filter taxonomy, custom meta and post type as search result. Custom mods by Federico Porta.
 Version: 1.0.7
-Author: TC 
+Author: TC & FP mods
 Author URI: http://www.9-sec.com/
 */
 /*  Copyright 2012 TCK (email: devildai@gmail.com)

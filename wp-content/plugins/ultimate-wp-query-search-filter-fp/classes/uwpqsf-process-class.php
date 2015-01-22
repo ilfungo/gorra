@@ -235,7 +235,7 @@ if(!class_exists('uwpqsfprocess')){
          		$query->set( $k, $v );
 		}
         //si qui c'è la query finale??
-		print_r($query);
+		//print_r($query);
         //print_r($arg);
 		//exit();
 		return $query; 

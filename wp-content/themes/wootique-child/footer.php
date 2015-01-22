@@ -72,6 +72,10 @@ $login=$current_user->user_login;
 	echo $login;
 }*/
 if($ruolo[0]=="administrator"){
+echo "<div>";
+    global $wp_query;
+    echo $wp_query->request;
+echo "</div>";
 echo '<div id="bottom_debug">'; 	
   $included_files = get_included_files();
   
@@ -80,7 +84,7 @@ echo '<div id="bottom_debug">';
         echo "<br />"."$filename\n";
       }
   }
-echo '</div>';  
+echo '</div>';
 }
 ?>
 </body>

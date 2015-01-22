@@ -82,18 +82,20 @@ $table_prefix  = 'wp_';
  * selezionata. Ad esempio, installare de_DE.mo in to wp-content/languages ed
  * impostare WPLANG a 'de_DE' per abilitare il supporto alla lingua tedesca.
  *
- * Tale valore � gi� impostato per la lingua italiana
+ * Tale valore è già impostato per la lingua italiana
  */
 define('WPLANG', 'it_IT');
 
 /**
- * Per gli sviluppatori: modalit� di debug di WordPress.
+ * Per gli sviluppatori: modalità di debug di WordPress.
  *
  * Modificare questa voce a TRUE per abilitare la visualizzazione degli avvisi
  * durante lo sviluppo.
  * E' fortemente raccomandato agli svilupaptori di temi e plugin di utilizare
  * WP_DEBUG all'interno dei loro ambienti di sviluppo.
  */
+
+//define('SAVEQUERIES', true);
 
 //il debug � ridefinito in functions
 // Enable WP_DEBUG mode

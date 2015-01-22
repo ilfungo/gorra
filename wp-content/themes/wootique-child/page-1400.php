@@ -17,6 +17,7 @@
 
                 <div class="entry">
                 	<?php the_content(); ?>
+
                     <?php
                     //list terms in a given taxonomy using wp_list_categories (also useful as a widget if using a PHP Code plugin)
 
@@ -37,9 +38,9 @@
                     );
                     ?>
 
-                    <ul>
+
                         <?php gorra_list_categories( $args ); ?>
-                    </ul>
+
 
 					<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'woothemes' ), 'after' => '</div>' ) ); ?>
                	</div><!-- /.entry -->

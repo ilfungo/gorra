@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 global $post, $product;
 
-//echo $post->ID. " " . $product->id; // sono uguali
+//echo "postid=".$post->ID. " " . $product->id; // sono uguali
 
 $product_cats = get_the_terms( $product->id, 'product_cat');
 $product_cat = get_last_array($product_cats);//tira fuori un ID

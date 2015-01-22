@@ -46,7 +46,7 @@ function wootique_header_search() {
 
     	<form role="search" method="get" id="searchform" class="searchform" action="<?php echo home_url(); ?>">
 			<label class="screen-reader-text" for="s"><?php _e('Search for:', 'woothemes'); ?></label>
-			<input type="text" value="<?php the_search_query(); ?>" name="s" id="s"  class="field s" placeholder="<?php _e('Search for products', 'woothemes'); ?>" />
+			<input type="text" value="<?php the_search_query(); ?>" name="s" id="s"  class="field s" placeholder="<?php _e('Cerca tra le nostre piante', 'woothemes'); ?>" />
 			<input type="image" class="submit btn" name="submit" value="<?php _e('Search', 'woothemes'); ?>" src="<?php echo get_template_directory_uri(); ?>/images/ico-search.png">
 			<?php if ($woo_options['woo_header_search_scope'] == 'products' ) { echo '<input type="hidden" name="post_type" value="product" />'; } else { echo '<input type="hidden" name="post_type" value="post" />'; } ?>
 		</form>

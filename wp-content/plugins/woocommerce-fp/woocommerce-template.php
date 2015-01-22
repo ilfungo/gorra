@@ -255,20 +255,28 @@ add_action( 'woocommerce_review_order_before_submit', 'descriprion_in_review_ord
 
 function descriprion_in_review_order_after_cart_contents() {
 
-    echo "<div class='payment_box payment_method_pre_ordine'>\n";
-    echo "<div id=\"infoSpedizione\">Leggi le modalità di pagamento e per indicazioni generali relative  ai costi di spedizione +</div>\n";
-    echo "<div id=\"costiSpedizione\">Condizioni spedizione</div>\n";
+    echo "<div class=\"payment_method_pre_ordine\">\n";
+    echo "<div id=\"infoSpedizione\" class=\"desc_box\"><a href=\"javascript:void()\">Leggi le modalità di pagamento e per indicazioni generali relative  ai costi di spedizione</a></div>\n";
+    echo "<div id=\"costiSpedizione\" class=\"desc_box\">".gorra_content('1429')."</div>\n";
     echo "</div>\n";
     ?>
     <script>
         jQuery(function ($) {
             $("#infoSpedizione").click(function(){
-                $("#costiSpedizione").toggle();
+                $("#costiSpedizione").toggle(400);
             });
         });
     </script>
 <?php
 
+}
+
+function gorra_content($id){
+    $content_post = get_post($id);
+    $content = $content_post->post_content;
+    $content = apply_filters('the_content', $content);
+    $content = str_replace(']]>', ']]&gt;', $content);
+    return $content;
 }
 
 /*---Move Product price by moving add to cart*/
@@ -278,7 +286,6 @@ add_action( 'woocommerce_single_product_summary','woocommerce_template_single_ad
 
 add_action( 'woocommerce_after_order_notes', 'wordimpress_custom_checkout_field' );
 */
-
 
 
 /*---Move Product price by moving add to cart*/
@@ -352,8 +359,10 @@ class My_Category_Walker extends Walker_Category {
     static $current_parent;
 
     function start_lvl( &$output, $depth = 0, $args = array() ) {
+        //echo "depth";print_r($depth);
+        //echo "args";print_r($args);
         $this->lev = 0;
-        $output .= "<ul>" . PHP_EOL;
+        $output .= "<ul class=\"depth_$depth\">" . PHP_EOL;
     }
 
     function end_lvl( &$output, $depth = 0, $args = array() ) {
@@ -441,7 +450,7 @@ function gorra_list_categories( $args = '' ) {
     extract( $r );
     if ( ! taxonomy_exists($taxonomy) ) return false;
     $categories = get_categories( $r );
-    $output = "<ul class='" . esc_attr( $wrap_class ) . "'>" . PHP_EOL;
+    $ul_in = "<ul class='" . esc_attr( $wrap_class ) . "'>" . PHP_EOL;
     if ( empty( $categories ) ) {
         if ( ! empty( $show_option_none ) ) $output .= "<li>" . $show_option_none . "</li>" . PHP_EOL;
     } else {
@@ -453,6 +462,8 @@ function gorra_list_categories( $args = '' ) {
         $walker = new My_Category_Walker;
         $output .= $walker->walk($categories, $depth, $r);
     }
-    $output .= "</ul>" . PHP_EOL;
-    if ( $echo ) echo $output; else return $output;
+    $ul_out = "</ul>" . PHP_EOL;
+    if($output!=""){
+        if ( $echo ) echo $output; else return $output;
+    }
 }

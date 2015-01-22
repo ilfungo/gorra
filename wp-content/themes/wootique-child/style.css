@@ -253,4 +253,20 @@ p.price{
 }
 #costiSpedizione{
     display:none;
+
+}
+
+.payment_method_pre_ordine{
+    margin-bottom:20px;
+}
+
+.desc_box {
+    background: none repeat scroll 0 0 #f6f6f6;
+    border: 1px solid #e6e6e6;
+    padding: 12px;
+}
+
+ul.depth_0 {
+    list-style: outside none disc;
+    margin: 0 0 0 1.7142em;
 }
