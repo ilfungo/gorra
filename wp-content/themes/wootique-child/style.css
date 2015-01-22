@@ -269,4 +269,41 @@ p.price{
 ul.depth_0 {
     list-style: outside none disc;
     margin: 0 0 0 1.7142em;
+
+}
+
+.payment_method_pre_ordine{
+    margin-bottom:20px;
+}
+
+.desc_box {
+    background: none repeat scroll 0 0 #f6f6f6;
+    border: 1px solid #e6e6e6;
+    padding: 12px;
+}
+
+ul.depth_0 {
+    list-style: outside none disc;
+    margin: 0 0 0 1.7142em;
+}
+[class*="tax-check-"] label, [class*="cmf-check-"] label {
+    float: left;
+    width: 30%;
+	font-size:0.6em;
+	line-height: 1.2em;
+}
+
+/* css Simone ricerca pianta */
+
+div#uwpqsf_id label{
+    width:180px;   !important;
+    padding-left:20px;
+}
+
+div#uwpqsf_id{
+    border: solid 3px #74978A; !important;
+    border-radius:10px; !important;
+}
+div#uwpqsf_id span{
+    padding-left: 10px; !important;
 }
