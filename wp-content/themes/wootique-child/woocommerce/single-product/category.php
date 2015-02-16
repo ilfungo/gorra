@@ -43,6 +43,7 @@ foreach ($prod_terms as $prod_term) {
         if($variable=="genere"){
             $link = get_term_link( $this_term, 'product_cat' );
             echo '<div class="genere"><b><a href="'.$link.'">'.$this_term->name. "</a></b></div> ";
+            $descrizione_genere=$this_term->description;
         }
     }
     foreach($product_categories_all_hierachy as $product_category){
@@ -51,6 +52,7 @@ foreach ($prod_terms as $prod_term) {
         if($variable=="descrittore_generico"){
             $link = get_term_link( $this_term, 'product_cat' );
             echo " <div  class=\"descrittore_generico\"><b class=\"descrittore_generico\"><a href=\"".$link."\">".$this_term->name."</a></b></div> ";
+            $descrizione_descrittore_generico=$this_term->description;
         }
     }
     foreach($product_categories_all_hierachy as $product_category){
@@ -59,6 +61,7 @@ foreach ($prod_terms as $prod_term) {
         if($variable=="descrittore_generico_figlio"){
             $link = get_term_link( $this_term, 'product_cat' );
             echo " <div  class=\"descrittore_generico_figlio\"><b class=\"descrittore_generico_figlio\"><a href=\"".$link."\">".$this_term->name."</a></b></div> ";
+            $descrizione_descrittore_generico_figlio=$this_term->description;
         }
     }
     foreach($product_categories_all_hierachy as $product_category){
@@ -67,6 +70,7 @@ foreach ($prod_terms as $prod_term) {
         if($variable=="famiglia"){
             $link = get_term_link( $this_term, 'product_cat' );
             echo "<div  class=\"famiglia\">Famiglia: <b class=\"famiglia\"><a href=\"".$link."\">".$this_term->name."</a></b></div> ";
+            $descrizione_famiglia=$this_term->description;
         }
     }
 
@@ -74,9 +78,19 @@ foreach ($prod_terms as $prod_term) {
     foreach($product_categories_all_hierachy as $product_category){
         $this_term = get_term($product_category, "product_cat" );
         $variable = get_field('tiplogia_categoria', $this_term);
-        if($variable=="genere"){
-            $link = get_term_link( $this_term, 'product_cat' );
+        if($variable=="genere" OR $variable=="descrittore_generico_figlio" OR $variable=="descrittore_generico"){
+            /*
+            if($descrizione_descrittore_generico_figlio!="")
+                $descrizione=$descrizione_famiglia;
+            if($descrizione_descrittore_generico_figlio!="")
+                $descrizione=$descrizione_genere;
+            if($descrizione_descrittore_generico_figlio!="")
+                $descrizione=$descrizione_descrittore_generico;
+            if($descrizione_descrittore_generico_figlio!="")
+                $descrizione=$descrizione_descrittore_generico_figlio;
+            */
             echo "<div class=\"descrizione_genere\">".$this_term->description."</div> ";
+            //echo "<div class=\"descrizione_genere\">".$descrizione."</div>";
         }
     }
 

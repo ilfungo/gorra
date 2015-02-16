@@ -65,7 +65,8 @@ get_currentuserinfo();
 
 $ruolo=$current_user->roles;
 $login=$current_user->user_login;
-//echo "ruolo -> ".$ruolo[0];    
+//echo "ruolo -> ".$ruolo[0];
+// scrivo questa cosa
 
 /*scrivo un commenttino qui*/
 
@@ -77,7 +78,7 @@ echo "<div>";
     global $wp_query;
     echo $wp_query->request;
 echo "</div>";
-echo '<div id="bottom_debug">'; 	
+echo '<div id="bottom_debug">';
   $included_files = get_included_files();
   
   foreach ($included_files as $filename) {
@@ -86,7 +87,7 @@ echo '<div id="bottom_debug">';
       }
   }
 echo '</div>';
-}//qggiungo un commento
+}
 ?>
 </body>
 </html>

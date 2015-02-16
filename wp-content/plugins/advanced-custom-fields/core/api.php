@@ -17,7 +17,9 @@
 */
 
 function get_field_reference( $field_name, $post_id ) {
-	
+    if(is_object($post_id)){return true;} 
+	//var_dump($field_name);
+    //var_dump($post_id);
 	// cache
 	$found = false;
 	$cache = wp_cache_get( 'field_reference/post_id=' .  $post_id . '/name=' .  $field_name, 'acf', false, $found );

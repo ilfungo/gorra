@@ -207,9 +207,9 @@ function get_term_all_parents($term_id, $post_id, $taxonomy){
         $term_id = $parent->parent;
 
         $parent  = get_term_by( 'id', $term_id, $taxonomy);
-        $my_parent = $my_parent." ".$parent->slug;
-        $i++;
-        if($i>=10){return $my_parent;}
+            $my_parent = $my_parent." ".$parent->slug;
+            $i++;
+            if($i>=10){return $my_parent;}
     }
     return $my_parent;
 }
@@ -222,5 +222,21 @@ remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_l
 
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_category', 4 );
 
+//area widget
+
+register_sidebar(array(
+    'name'=> 'Left Sidebar',
+    'id' => 'left_sidebar',
+    'before_widget' => '<li id="main" class="widget %2$s">',
+    'after_widget' => '</li>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+));
+
+
+function wc_remove_related_products( $args ) {
+    return array();
+}
+add_filter('woocommerce_related_products_args','wc_remove_related_products', 10);
 ?>
 

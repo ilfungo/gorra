@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div id="content" class="col-full">
-    <div id="main" class="col-left">
+    <div id="main" class="fullwidth"> 
 
         <?php if ( $woo_options[ 'woo_breadcrumbs_show' ] == 'true' ) { ?>
             <?php woo_breadcrumbs(); ?>
@@ -9,7 +9,7 @@
 
         <?php if (have_posts()) : $count = 0; ?>
 
-            <span class="archive_header"><?php _e( 'Search results :', 'woothemes' ) ?> <?php the_search_query();?></span>
+            <span class="archive_header"><?php _e( 'Risultati ricerca :', 'woothemes' ) ?> <?php the_search_query();?></span>
 
             <?php while (have_posts()) : the_post(); $count++; ?>
 
