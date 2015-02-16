@@ -48,7 +48,7 @@ body.aster {
 body.aster div#wrapper, body.aster div#bottom_debug {
     background-color: #877697;
 }
-body.aster #navigation-one li a {
+#navigation-one li#menu-item-1200{
     background-image: linear-gradient(to top, #5c5167 0%, #a48fb8 100%);
 }
 body.perenni {
@@ -57,7 +57,7 @@ body.perenni {
 body.perenni div#wrapper, body.perenni div#bottom_debug {
     background-color: #797f98;
 }
-body.perenni #navigation-one li a {
+#navigation-one li#menu-item-1199{
     background-image: -ms-linear-gradient(bottom, #535769 0%, #888FAB 100%);
     background-image: -moz-linear-gradient(bottom, #535769 0%, #888FAB 100%);
     background-image: -o-linear-gradient(bottom, #535769 0%, #888FAB 100%);
@@ -71,9 +71,9 @@ body.graminacee {
 body.graminacee div#wrapper, body.graminacee div#bottom_debug {
     background-color: #e0cfac;
 }
-body.graminacee #navigation-one li a {
-    background-image: linear-gradient(to top, #988c75 0%, #e6e3d2 100%);
-}
+#navigation-one li#menu-item-1201{
+        background-image: linear-gradient(to top, #988c75 0%, #e6e3d2 100%);
+    }
 
 body.sedum-crassulaceae {
     background-color: #c496a7;
@@ -81,7 +81,7 @@ body.sedum-crassulaceae {
 body.sedum-crassulaceae div#wrapper, body.sedum-crassulaceae div#bottom_debug {
     background-color: #c496a7;
 }
-#navigation-one li#menu-item-1303 {
+#navigation-one li#menu-item-1303{
     background-image: -ms-linear-gradient(bottom, #896874 0%, #E0B9CE 100%);
     background-image: -moz-linear-gradient(bottom, #896874 0%, #E0B9CE 100%);
     background-image: -o-linear-gradient(bottom, #896874 0%, #E0B9CE 100%);
@@ -89,9 +89,11 @@ body.sedum-crassulaceae div#wrapper, body.sedum-crassulaceae div#bottom_debug {
     background-image: -webkit-linear-gradient(bottom, #896874 0%, #E0B9CE 100%);
     background-image: linear-gradient(to top, #896874 0%, #E0B9CE 100%);
 }
-/*body.home #navigation-one li a {
-    background-image: linear-gradient(to top, #50685f 0%, #8db8a9 100%);
-}*/
+/* border radius */
+
+#navigation-one li#menu-item-1303{
+    -moz-border-radius-topleft: 2px;
+}
 #introduction {
     margin-bottom: -10px;
     margin-top: -1px;
