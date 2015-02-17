@@ -35,7 +35,6 @@ Version:        0.1.0
     right: -3px;
 }*/
 #navigation-one a *:hover {
-    background-color: rgba(0, 0, 0, 0.3);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin: 2px 2px 0;
@@ -417,3 +416,20 @@ body.home div#introduction {
     border-top: 6px solid #fff;
 }
 
+/* border radius menu famiglie(#navigation-one) */
+
+#navigation-one li{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+/*cambiato background menu */
+#navigation-one li a:hover, .nav li.current_page_item a, .nav li.current_page_parent a, .nav li.current-menu-item a {
+    color: #222 !important;
+    background-color:transparent;
+    text-decoration: none !important;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    text-shadow: none;
+}
