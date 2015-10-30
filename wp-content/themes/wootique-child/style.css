@@ -1,309 +1,494 @@
-/*
-Theme Name:     Wootique
-Theme URI:      http://example.com/
-Description:    Tema Child per il tema Wootique
-Author:         Simone Lazzaro
-Author URI:     http://example.com/about/
-Template:       wootique
-Version:        0.1.0
-*/
-
-@import "../wootique/style.css";
-@import "./style-custom.css";
-#wrapper {
-    background-image: none;
-}
-#main-nav-tops {
-    float: right;
-}
-#navigation {
-    background-color: transparent;
-    border-top: medium none;
-}
-#navigation-two {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-top-left-radius: 10px;
-}
-#navigation-two, #navigation-one {
-    overflow: hidden;
-}
-#navigation-one a {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin: 2px 2px 0;
-    position: relative;
-    right: -3px;
-}
-#navigation-one a *:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin: 2px 2px 0;
-    position: relative;
-    right: -3px;
-}
-body.aster {
-    background-color: #877697;
-}
-body.aster div#wrapper, body.aster div#bottom_debug {
-    background-color: #877697;
-}
-body.aster #navigation-one li a {
-    background-image: linear-gradient(to top, #5c5167 0%, #a48fb8 100%);
-}
-body.perenni {
-    background-color: #797f98;
-}
-body.perenni div#wrapper, body.perenni div#bottom_debug {
-    background-color: #797f98;
-}
-body.perenni #navigation-one li a {
-	background-image: -ms-linear-gradient(bottom, #535769 0%, #888FAB 100%);
-	background-image: -moz-linear-gradient(bottom, #535769 0%, #888FAB 100%);
-	background-image: -o-linear-gradient(bottom, #535769 0%, #888FAB 100%);
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #535769), color-stop(1, #888FAB));
-	background-image: -webkit-linear-gradient(bottom, #535769 0%, #888FAB 100%);
-	background-image: linear-gradient(to top, #535769 0%, #888FAB 100%);
-}
-body.graminacee {
-    background-color: #e0cfac;
-}
-body.graminacee div#wrapper, body.graminacee div#bottom_debug {
-    background-color: #e0cfac;
-}
-body.graminacee #navigation-one li a {
-    background-image: linear-gradient(to top, #988c75 0%, #e6e3d2 100%);
-}
-
-body.sedum-crassulaceae {
-    background-color: #c496a7;
-}
-body.sedum-crassulaceae div#wrapper, body.sedum-crassulaceae div#bottom_debug {
-    background-color: #c496a7;
-}
-body.sedum-crassulaceae #navigation-one li a {
-	background-image: -ms-linear-gradient(bottom, #896874 0%, #C496A7 100%);
-	background-image: -moz-linear-gradient(bottom, #896874 0%, #C496A7 100%);
-	background-image: -o-linear-gradient(bottom, #896874 0%, #C496A7 100%);
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #896874), color-stop(1, #C496A7));
-	background-image: -webkit-linear-gradient(bottom, #896874 0%, #C496A7 100%);
-	background-image: linear-gradient(to top, #896874 0%, #C496A7 100%); 
-}
-body.home #navigation-one li a {
-    background-image: linear-gradient(to top, #50685f 0%, #8db8a9 100%);
-}
-#introduction {
-    margin-bottom: -10px;
-    margin-top: -1px;
-}
-#content {
-    margin-top: -1px;
-    padding-top: 30px;
-}
-a.checkout-link {
-    margin-top: -44px;
-}
-a.button.product_type_simple {
-    display: none;
-}
-#aqsfformid {
-    border: medium none rgba(0, 0, 0, 0.3);
-    width: 400px;
-}
-#navigation {
-    padding: 0;
-    width: 980px;
-}
-.single-product .product .summary h1.product_title {
-    font-size: 1.9em;
-}
-#sidebar {
-    width: 29%;
-}
-#main {
-    padding-right: 40px;
-    width: 69%;
-}
-.single-product .product .summary {
-    float: right;
-    width: 400px;
-}
-.layout-right-content #main {
-    padding-left: 1%;
-    padding-right: 0;
-}
-.layout-right-content #content {
-    background: url("images/sidebar-left.png") repeat-y scroll -10px 0 rgba(0, 0, 0, 0);
-}
-.nav li:hover {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border-radius: 3px 3px 0 0;
-    color: #aaa;
-}
-#bottom_debug {
-    color: #fff;
-    width: 980px;
-}
-.single-product .product .summary h1.product_title {
-    font-size: 1.3em;
-    padding: 1em 0;
-    line-height:1.5em;
-}
-.famiglia b, .genere b{
-    font-size: 1.1em;
-}
-div.famiglia, div.genere{
-    display:inline-block;
-}
-div.famiglia{
- /*margin-left:1em ;*/
- clear:both;
- border-top:1px solid #e6e6e6;
- border-bottom:1px solid #e6e6e6;
- padding: 0 0.5em;
- width:100%;
- text-align:right;
-}
-.mylabel {
-    font-size: 1em;
-    font-weight: 600;
-}
-.descrizione_genere {
-    font-size: 0.9em;
-}
-
-.term-perenni ul.products li, .term-aster  ul.products li, .term-graminacee  ul.products li, .term-sedum-crassulaceae  ul.products li{
-    float: none;
-    float: left;
-    list-style: outside none none;
-    margin: 0;
-    position: relative;
-    text-align: left;
-    width: 100%;
-}
-.term-a-fioritura-autunnale  ul.products li{
-	float: none;
-    float: left;
-    list-style: outside none none;
-    margin: 0;
-    position: relative;
-    text-align: left;
-    width: 100%;
-}
-
-/*  prezzo  */
-
-p.price{
-	margin-top:0px;
-}
-
-.single-product .product .summary .price {
-    color: #777;
-    font-weight: normal;
-    padding: 0;
-    font-size:0.8em;
-}
-.descrittore_generico{
-    display: inline-block;
-}
-.descrittore_generico_figlio{
-    display: inline-block;
-}
-
-.single-product .product .summary form.cart {
-    background: url("none") repeat-x scroll center top rgba(0, 0, 0, 0);
-    border-top: 1px solid #e6e6e6;
-    margin-bottom: 0.618em;
-    margin-top: 1em;
-    padding-top: 0.7em;
-    overflow: hidden;
-    padding-top: 1.5em;
-}
-
-#alphabetical_order_navigation{
-    margin-bottom:1em;
-}
-
-.col-full .famiglia{
-    margin-bottom:2em;
-}
-
-#descrittore_generico_figlio h1, #descrittore_generico h1, #genere h1{
-    font-size: 2em;
-}
-
-.product_cat-item ul{
-    margin-top:0;
-    margin-bottom:0;
-}
-
-.product_cat-high{
-    font-weight:600;
-    font-size:1.1em;
-}
-
-.product_cat-high li{
-    font-weight:normal;
-    font-size:1em;
-}
-
-.shipping-calculator-button{
-    display:none;
-}
-#costiSpedizione{
-    display:none;
-
-}
-
-.payment_method_pre_ordine{
-    margin-bottom:20px;
-}
-
-.desc_box {
-    background: none repeat scroll 0 0 #f6f6f6;
-    border: 1px solid #e6e6e6;
-    padding: 12px;
-}
-
-ul.depth_0 {
-    list-style: outside none disc;
-    margin: 0 0 0 1.7142em;
-
-}
-
-.payment_method_pre_ordine{
-    margin-bottom:20px;
-}
-
-.desc_box {
-    background: none repeat scroll 0 0 #f6f6f6;
-    border: 1px solid #e6e6e6;
-    padding: 12px;
-}
-
-ul.depth_0 {
-    list-style: outside none disc;
-    margin: 0 0 0 1.7142em;
-}
-[class*="tax-check-"] label, [class*="cmf-check-"] label {
-    float: left;
-    width: 30%;
-	font-size:0.6em;
-	line-height: 1.2em;
-}
-
-/* css Simone ricerca pianta */
-
-div#uwpqsf_id label{
-    width:180px;   !important;
-    padding-left:20px;
-}
-
-div#uwpqsf_id{
-    border: solid 3px #74978A; !important;
-    border-radius:10px; !important;
-}
-div#uwpqsf_id span{
-    padding-left: 10px; !important;
+/*
+Theme Name:     Wootique
+Theme URI:      http://example.com/
+Description:    Tema Child per il tema Wootique
+Author:         Simone Lazzaro
+Author URI:     http://example.com/about/
+Template:       wootique
+Version:        0.1.0
+*/
+
+@import "../wootique/style.css";
+#wrapper {
+    background-image: none;
+}
+#main-nav-tops {
+    float: right;
+}
+#navigation {
+    background-color: transparent;
+    border-top: medium none;
+}
+#navigation-two {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 10px;
+}
+#navigation-two, #navigation-one {
+    overflow: hidden;
+}
+/*#navigation-one a {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 2px 2px 0;
+    position: relative;
+    right: -3px;
+}*/
+#navigation-one a *:hover {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 2px 2px 0;
+    position: relative;
+    right: -3px;
+}
+body.aster {
+    background-color: #877697;
+}
+body.aster div#wrapper, body.aster div#bottom_debug {
+    background-color: #877697;
+}
+#navigation-one li#menu-item-1200{
+    background-image: linear-gradient(to top, #5c5167 0%, #a48fb8 100%);
+}
+body.perenni {
+    background-color: #797f98;
+}
+body.perenni div#wrapper, body.perenni div#bottom_debug {
+    background-color: #797f98;
+}
+#navigation-one li#menu-item-1199{
+    background-image: -ms-linear-gradient(bottom, #535769 0%, #888FAB 100%);
+    background-image: -moz-linear-gradient(bottom, #535769 0%, #888FAB 100%);
+    background-image: -o-linear-gradient(bottom, #535769 0%, #888FAB 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #535769), color-stop(1, #888FAB));
+    background-image: -webkit-linear-gradient(bottom, #535769 0%, #888FAB 100%);
+    background-image: linear-gradient(to top, #535769 0%, #888FAB 100%);
+}
+body.graminacee {
+    background-color: #e0cfac;
+}
+body.graminacee div#wrapper, body.graminacee div#bottom_debug {
+    background-color: #e0cfac;
+}
+#navigation-one li#menu-item-1201{
+        background-image: linear-gradient(to top, #988c75 0%, #e6e3d2 100%);
+    }
+
+body.sedum-crassulaceae {
+    background-color: #c496a7;
+}
+body.sedum-crassulaceae div#wrapper, body.sedum-crassulaceae div#bottom_debug {
+    background-color: #c496a7;
+}
+#navigation-one li#menu-item-1303{
+    background-image: -ms-linear-gradient(bottom, #896874 0%, #E0B9CE 100%);
+    background-image: -moz-linear-gradient(bottom, #896874 0%, #E0B9CE 100%);
+    background-image: -o-linear-gradient(bottom, #896874 0%, #E0B9CE 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #896874), color-stop(1, #E0B9CE));
+    background-image: -webkit-linear-gradient(bottom, #896874 0%, #E0B9CE 100%);
+    background-image: linear-gradient(to top, #896874 0%, #E0B9CE 100%);
+}
+/* border radius */
+
+#navigation-one li#menu-item-1303{
+    -moz-border-radius-topleft: 2px;
+}
+#introduction {
+    margin-bottom: -10px;
+    margin-top: -1px;
+}
+#content {
+    margin-top: -1px;
+    padding-top: 30px;
+}
+a.checkout-link {
+    margin-top: -44px;
+}
+a.button.product_type_simple {
+    display: none;
+}
+#aqsfformid {
+    border: medium none rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+#navigation {
+    padding: 0;
+    width: 980px;
+}
+.single-product .product .summary h1.product_title {
+    font-size: 1.9em;
+}
+#sidebar {
+    width: 29%;
+}
+#main {
+    padding-right: 40px;
+    width: 69%;
+}
+.single-product .product .summary {
+    float: right;
+    width: 400px;
+}
+.layout-right-content #main {
+    padding-left: 1%;
+    padding-right: 0;
+}
+.layout-right-content #content {
+    background: url("images/sidebar-left.png") repeat-y scroll -10px 0 rgba(0, 0, 0, 0);
+}
+.nav li:hover {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 3px 3px 0 0;
+    color: #aaa;
+}
+#bottom_debug {
+    color: #fff;
+    width: 980px;
+}
+.single-product .product .summary h1.product_title {
+    font-size: 1.3em;
+    padding: 1em 0;
+    line-height:1.5em;
+}
+.famiglia b, .genere b{
+    font-size: 1.1em;
+}
+div.famiglia, div.genere{
+    display:inline-block;
+}
+div.famiglia{
+    /*margin-left:1em ;*/
+    clear:both;
+    border-top:1px solid #e6e6e6;
+    border-bottom:1px solid #e6e6e6;
+    padding: 0 0.5em;
+    width:100%;
+    text-align:right;
+}
+.mylabel {
+    font-size: 1em;
+    font-weight: 600;
+}
+.descrizione_genere {
+    font-size: 0.9em;
+}
+
+.term-perenni ul.products li, .term-aster  ul.products li, .term-graminacee  ul.products li, .term-sedum-crassulaceae  ul.products li{
+    float: none;
+    float: left;
+    list-style: outside none none;
+    margin: 0;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+.term-a-fioritura-autunnale  ul.products li{
+    float: none;
+    float: left;
+    list-style: outside none none;
+    margin: 0;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+/*  prezzo  */
+
+p.price{
+    margin-top:0px;
+}
+
+.single-product .product .summary .price {
+    color: #777;
+    font-weight: normal;
+    padding: 0;
+    font-size:0.8em;
+}
+.descrittore_generico{
+    display: inline-block;
+}
+.descrittore_generico_figlio{
+    display: inline-block;
+}
+
+.single-product .product .summary form.cart {
+    background: url("none") repeat-x scroll center top rgba(0, 0, 0, 0);
+    border-top: 1px solid #e6e6e6;
+    margin-bottom: 0.618em;
+    margin-top: 1em;
+    padding-top: 0.7em;
+    overflow: hidden;
+    padding-top: 1.5em;
+}
+
+#alphabetical_order_navigation{
+    margin-bottom:1em;
+}
+
+.col-full .famiglia{
+    margin-bottom:2em;
+}
+
+#descrittore_generico_figlio h1, #descrittore_generico h1, #genere h1{
+    font-size: 2em;
+}
+
+.product_cat-item ul{
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.product_cat-high{
+    font-weight:600;
+    font-size:1.1em;
+}
+
+.product_cat-high li{
+    font-weight:normal;
+    font-size:1em;
+}
+
+.shipping-calculator-button{
+    display:none;
+}
+#costiSpedizione{
+    display:none;
+
+}
+
+.payment_method_pre_ordine{
+    margin-bottom:20px;
+}
+
+.desc_box {
+    background: none repeat scroll 0 0 #f6f6f6;
+    border: 1px solid #e6e6e6;
+    padding: 12px;
+}
+
+ul.depth_0 {
+    list-style: outside none disc;
+    margin: 0 0 0 1.7142em;
+
+}
+
+.payment_method_pre_ordine{
+    margin-bottom:20px;
+}
+
+.desc_box {
+    background: none repeat scroll 0 0 #f6f6f6;
+    border: 1px solid #e6e6e6;
+    padding: 12px;
+}
+
+ul.depth_0 {
+    list-style: outside none disc;
+    margin: 0 0 0 1.7142em;
+}
+[class*="tax-check-"] label, [class*="cmf-check-"] label {
+    float: left;
+    width: 30%;
+    font-size:0.6em;
+    line-height: 1.2em;
+}
+
+/* css Simone ricerca pianta */
+
+div#uwpqsf_id label{
+    width:180px;   !important;
+    padding-left:20px;
+}
+
+div#uwpqsf_id{
+    border: solid 3px #74978A; !important;
+    border-radius:10px; !important;
+}
+div#uwpqsf_id span{
+    padding-left: 10px; !important;
+}
+
+/* modifiche pagina di ricerca */
+
+body.search h2.title{
+    padding-bottom: 5px;
+    padding-top: 5px;
+} 
+body.search div.products{
+    width:100%;
+    height:20px;
+}
+body.search div#container p{
+    display:none;
+}
+body.search div.product{
+    font-size:8px;
+}
+
+/* menu laterale home */
+
+div.primary li{
+    list-style-type: none;
+}
+
+body.home div#content{
+    padding-left: 25px;
+}
+div#dc_jqaccordion_widget-2-item.dcjq-accordion{
+    border:solid 1px #74978A;
+    border-radius: 10px;
+}
+
+a.dcjq-parent{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+li#menu-item-1808 a{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+body.home div#introduction{
+    padding-top: 35px;
+}
+div#dc_jqaccordion_widget-2-item.dcjq-accordion ul a.dcjq-parent{
+    list-style-type: none;
+}
+#sidebar #main {
+    padding-right: 10px;
+    width: 90%;
+}
+#dc_jqaccordion_widget-2-item ul a.dcjq-parent {
+    background-color: #fff;
+    background-image: none;
+    font-weight: bold;
+}
+
+#dc_jqaccordion_widget-2-item{background-color: #fff; border-top: 1px solid #ccc; border-right: 1px solid #ccc; border-left: 1px solid #ccc;}
+#dc_jqaccordion_widget-2-item ul, #dc_jqaccordion_widget-2-item ul, #dc_jqaccordion_widget-2-item ul li {margin: 0; padding: 0; border: none; list-style: none;}
+#dc_jqaccordion_widget-2-item ul a {
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    text-decoration:none;
+    display: block;
+    color: #222;
+    font-weight: bold;
+}#dc_jqaccordion_widget-2-item ul ul.sub-menu a {    padding: 10px 10px 10px 32px;
+ }
+#dc_jqaccordion_widget-2-item ul ul a {font-weight: normal;}
+#dc_jqaccordion_widget-2-item ul a.dcjq-parent { font-weight: bold; background-color: #fff;}
+#dc_jqaccordion_widget-2-item ul a.dcjq-parent.active { background-color: #f3f3f3;}
+#dc_jqaccordion_widget-2-item ul a:hover {color: #990000;text-decoration: none}
+a.dcjq-parent {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+a.dcjq-parent:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#dc_jqaccordion_widget-2-item ul li#menu-item-1808 a {
+    border-bottom: 0;
+
+}
+#dc_jqaccordion_widget-2-item ul li a:hover {
+    text-decoration: none;
+}
+.nav a {
+    padding: 9px 20px;
+}
+
+#navigation-one a {
+    margin: 0;
+}
+.nav li {
+    margin-right: 0;
+}
+
+body.home div#introduction {
+    padding: 15px 15px 25px 15px ;
+}
+#introduction {
+    border: 0px;
+    border-top: 6px solid #fff;
+}
+
+/* border radius menu famiglie(#navigation-one) */
+
+#navigation-one li{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+/*cambiato background menu */
+#navigation-one li a:hover, .nav li.current_page_item a, .nav li.current_page_parent a, .nav li.current-menu-item a {
+    color: #222 !important;
+    background-color:transparent;
+    text-decoration: none !important;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    text-shadow: none;
+}
+
+/* colore menu famiglie home */
+
+body.home #navigation-one li a{
+
+    /* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(bottom, #516960 0%, #74978A 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(bottom, #516960 0%, #74978A 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(bottom, #516960 0%, #74978A 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #516960), color-stop(1, #74978A));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(bottom, #516960 0%, #74978A 100%);
+
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to top, #516960 0%, #74978A 100%);
+}
+
+
+p, ul, ol, dl, blockquote, hr, pre, table, fieldset, article, article footer, nav, form {
+    margin: 0 0 1.7142em;
+}
+
+.page-id-1452 #main ul.products li ,
+.page-id-1450 #main ul.products li ,
+.page-id-2087 #main ul.products li ,
+.search-results #main ul.products li{
+    margin-right: 1.8%;
+    width: 23%;
+}
+
+.page-id-1452 #main, .page-id-1450 #main, .page-id-2087 #main, search-results #main, .search-results #main.col-left{
+    width: 100%;
+}
+
+/*   tabs navigazione lettere */
+
+ul.products a#css_order_navigation_letters{
+    padding: 4px 7px;
+    margin: 1px 1px x21px 1px;
+    display:inline-block;
+    border-radius:3px 3px 3px 3px;
+    background:#04B4AE;
+    font-size:10px;
+    font-weight:600;
+    color:#4c4c4c;
+    transition:all linear 0.15s;
+}
+
+ul.products a#css_order_navigation_letters:hover{
+    background:#01DFA5;
+    text-decoration:none;
 }

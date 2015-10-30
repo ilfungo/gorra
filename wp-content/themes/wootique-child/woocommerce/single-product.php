@@ -11,8 +11,13 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-get_header( 'shop' ); ?>
-
+get_header( 'shop' ); 
+ ?>
+<?php if(has_post_thumbnail(get_the_ID())  == false){
+		remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20 );  
+		echo "<style>  .single-product .product .summary  { width:auto; }    </style>";
+	  }
+		?>
 	<?php
 		/**
 		 * woocommerce_before_main_content hook
